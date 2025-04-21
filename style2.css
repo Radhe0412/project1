@@ -1,0 +1,276 @@
+*
+{
+    padding: 0;
+    text-decoration: none;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+nav
+{
+    background: darkblue;
+    height: 80px;
+}
+.My_logo
+{
+    color: aliceblue;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 80px;
+    padding: 0 100px;
+}
+body
+{
+    font-family: monospace;
+}
+nav ul
+{
+    float: right;
+    margin-right: 60px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    font-size: 17px;
+    color:white;
+    text-transform: uppercase;
+}
+nav ul li a:hover{
+    color:yellow;
+}
+.checkbtn
+{
+    color: white;
+    float:right;
+    margin-right: 40px;
+    font-size: 30px;
+    line-height: 80px;
+    display: none;
+
+    
+}
+#check
+{
+    display: none;
+}
+@media(max-width:750px) {
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        background: darkblue;
+        width: 100%;
+        height: 100vh;
+        top: 60px;
+        text-align: center;
+        left: -100%;
+        transition: all 0.5s;
+}
+    nav ul li{
+        display: block;
+    }
+    #check:checked~ul
+    {
+        left: 0px;
+    }
+}
+.my_cover{
+    height: 400px;
+    width: 100%;
+}
+.p_title{
+    text-align: center;
+    font-size: 25px;
+    padding: 20px;
+}
+.card{
+    max-width:330px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,1.0);
+    margin: 15px;
+    padding:15px;
+}
+.card:hover{
+    box-shadow: 0 14px 18px 0 skyblue;   
+}
+.p_image{
+    width:100%;
+}
+.my_card{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card h4{
+    padding:10px;
+}
+.card p{
+    padding: 10px;
+}
+.card a{
+    padding: 10px;
+    background: lightblue;
+    border: radius 10% ;
+    margin: 10px;
+}
+.card a:hover{
+    background: black;
+    color: aliceblue;
+}
+.footer{
+    background: black;
+    width: 100%;
+}
+.footer_title h3{
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+.footer_content h4{
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;   
+}
+.footer_content p{
+    color:white;
+    padding: 10px;
+}
+.footer_content a{
+    color:white;
+}
+.footer_content a:hover{
+    color:black;
+    background: white;
+}
+.footer .footer_content{
+    display: flex;
+    justify-content: space-evenly;
+}
+@media(max-width:650px)
+{
+    .footer .footer_content{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+}
+footer h3{
+    text-align: center;
+    font-size: 22px;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+}
+footer hr{
+    color: white;
+}
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Form Container */
+form {
+    background-color: skyblue;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    margin: 50px auto;
+    font-family: Arial, sans-serif;
+}
+
+/* Form Title */
+form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Input Wrapper */
+.input_deg {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label Styling */
+.input_deg label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Text, Password, Email, Phone Inputs */
+.input_deg input[type="text"],
+.input_deg input[type="password"],
+.input_deg input[type="email"],
+.input_deg input[type="tel"] {
+    padding: 15px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border 0.3s ease;
+}
+
+/* Focus Effect */
+.input_deg input[type="text"]:focus,
+.input_deg input[type="password"]:focus,
+.input_deg input[type="email"]:focus,
+.input_deg input[type="tel"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Submit Button */
+.input_deg input[type="submit"] {
+    background-color: black;
+    color: #fff;
+    font-weight: bold;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover Effect for Submit */
+.input_deg input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+/* Container (optional - if using a wrapper div) */
+.login-form {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+}
+
+/* Input groups */
+.login-form > div {
+    margin-bottom: 1.2rem;
+}
+
+
+
+
